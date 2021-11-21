@@ -5,5 +5,5 @@ project(animal)
 # use carefully;  can interfere with point-cloud library
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
-add_executable(animal animal.cpp main.cpp)
-install(TARGETS animal RUNTIME DESTINATION bin)
+add_executable(animal_inherit animal.cpp dog.cpp main.cpp)
+install(TARGETS animal_inherit RUNTIME DESTINATION bin)
